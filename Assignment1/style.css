@@ -1,0 +1,134 @@
+/* type selector, class selector, id selector, 
+    attribute selector, pseudo-class/pseudo-element selector, 
+    descendant combinator, child combinator, 
+    direct sibling combinator, general sibling combinator */
+ /* https://georgiancollege-my.sharepoint.com/personal/jessica_gilfillan_georgiancollege_ca/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjessica%5Fgilfillan%5Fgeorgiancollege%5Fca%2FDocuments%2FCOURSES%2FCMPG%2FCOMP1054%2FSummer%5F2025%2Fassessments%2Fassignments%2Fassign%5Fone%2Epdf&parent=%2Fpersonal%2Fjessica%5Fgilfillan%5Fgeorgiancollege%5Fca%2FDocuments%2FCOURSES%2FCMPG%2FCOMP1054%2FSummer%5F2025%2Fassessments%2Fassignments&ga=1 */
+
+ /* 
+    Assignment 1 - CSS Zen Garden
+    Megan Summers - 200490048
+    Due: June 10, 2025 */
+
+
+* {
+   font-size: 10px;                  /* create base font-size for easier math */
+}
+/* 2 custom web fonts using google fonts */
+/* font family for titles */
+.savate-firstFont {
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500; /* suggested between 200-900 */
+  font-style: normal;
+}
+/* secondary font family for paragraphs */
+.edu-sa-hand-secondFont {
+  font-family: "Edu SA Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500; /* suggested between 400-700 */
+  font-style: normal;
+}
+body {
+   /* incorporate colour without reducing readability */
+   /* background gradient */
+   background: linear-gradient(90deg, rgba(237, 221, 83, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(42, 123, 155, 1) 100%);
+   /* box model understanding used throughout */
+   padding: 3rem;
+   /* initiallizing the font family for the main sections */
+   font-family: 'Edu SA Hand', cursive;
+}
+
+/* at least one example of each: */
+/* type selector */
+h1 {
+   font-size: 6rem;
+   font-weight: bold;
+   font-family: 'Savate', sans-serif;
+}
+h2 {
+   font-size: 5rem;
+   font-family: 'Savate', sans-serif;
+}
+h2 abbr {
+   font-size: 5rem;
+   font-family: 'Savate', sans-serif;
+}
+h3 {
+   font-size: 4rem;
+   font-family: 'Savate', sans-serif;
+}
+h4 {
+   font-size: 3.5rem;
+}
+h5 {
+   font-size: 3rem;
+}
+h6 {
+   font-size: 2.5rem;
+}
+p, abbr, a, li {
+   font-size: 2rem;
+   text-decoration: none;
+   color: #000;
+}
+/* class selector */
+.summary {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+
+}
+/* id selector */
+#zen-supporting {
+   padding: 4rem;
+}
+/* attribute selector */
+header[role="banner"] {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+}
+/* descendant combinator */
+ul li a {
+   font-weight: bold;
+}
+/* child combinator */
+h3 > p {
+   font-size: 4.5rem;
+}
+footer > a {
+   padding: 4rem;
+   font-size: 3rem;
+}
+/* pseudo-class/pseudo-element selector */
+footer > a:link {
+   color: #000;
+}
+footer > a:visited {
+   color: #7c1a7e;
+}
+footer > a:hover {
+   font-weight: bold;
+   color: #00f;
+   text-shadow: 2px 2px 4px rgb(58, 159, 226);
+}
+footer > a:active {
+   color: #1df04a;
+}
+/* general sibling combinator at end
+   starts with attribute selector, child combinator and descendant combinator */
+div[id="zen-supporting"] > div h3 ~ p {
+   text-indent: 2rem;
+}
+/* direct sibling combinator at end
+   starts with attribute selector, child combinator and descendant combinator
+   must be below the general or it will take over the indent */
+div[id="zen-supporting"] > div h3 + p {
+   text-indent: 4rem;
+}
+
+/* some type of creative element (hover, image filter, animation, etc.) */
+ul li a:hover {
+   text-decoration: underline;
+   color: #00f;
+}
