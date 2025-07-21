@@ -1,0 +1,157 @@
+/* header CSS */
+header nav {
+    display: flex;
+    background-color: #A0ECD0;
+    padding: 20px;
+}
+header nav div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+header nav textarea {
+    height: 1.9rem;
+    margin-left: 10%;
+    width: 25%;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+header nav button {
+    height: fit-content;
+    margin: 2px;
+    padding: 4px;
+    width: 15%;
+    font-size: 1.1rem;
+    background-color: #A0ECD0;
+    border: 2px solid #7b886b;
+}
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #c6e6da;
+}
+header section h1 {
+    font-size: 3rem;
+}
+header section p {
+    font-size: 1.7rem;
+    width: 750px;
+}
+.learnMore {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 125px;
+}
+
+/* main CSS */
+.topContainer {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.topContainerSection {
+    padding: 15px;
+}
+.topContainerSection h3 {
+    font-size: 2rem;
+    color: #726f6f;
+}
+.topContainerSection p {
+    font-size: 1.2rem;
+}
+.heading {
+    height: 125px;
+}
+main section {
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "leftBlock infoBlock rightBlock";
+    grid-template-columns: 1fr 5fr 1fr;
+}
+.leftBlock {
+    grid-area: "leftBlock";
+}
+.infoBlock {
+    grid-area: "infoBlock";
+}
+.rightBlock {
+    grid-area: "rightBlock";
+}
+.infoSection h3 {
+    grid-area: "heading";
+    font-size: 2.5rem;
+    color: #726f6f
+}
+.infoSection p {
+    grid-area: "info";
+    font-size: 1.5rem;
+}
+.topicSection {
+    display: grid;
+    grid-template-areas: 
+        "heading photo"
+        "info photo";
+    padding: 30px;
+    align-items: center;
+    text-align: right;
+}
+.topicSection img {
+    grid-area: "photo";
+    padding: 15px;
+    width: 90%;
+}
+.topicSectionSwitched {
+    display: grid;
+    grid-template-areas: 
+        "photo heading"
+        "photo info";
+    padding: 30px;
+    text-align: left;
+    align-items: center;
+}
+.topicSectionSwitched img {
+    grid-area: "photo";
+    padding: 15px;
+    width: 90%;
+}
+.viewDetails {
+    height: 45px;
+    width: 175px;
+    font-size: 1.25rem;
+}
+
+
+
+/* footerCSS */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+}
+footer a {
+    align-content: center;
+    text-decoration: none;
+    color: blue;
+}
+footer a:hover {
+    color: #94ddbc;
+}
+
+
+
+/* all button background */
+button {
+    background-color: #94DDBC;
+    border: 2px solid #88bb92;
+}
+button:hover {
+    background-color: #88bb92;
+    border: 2px solid #94DDBC;
+}
