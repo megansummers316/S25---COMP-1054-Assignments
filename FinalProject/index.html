@@ -1,0 +1,69 @@
+<!-- we need to create a personal portfolio showcasing us -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Megan Summers</title>
+        <link href="styles.css" rel="stylesheet">
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Hi! I'm Megan Summers :)</h1>
+            <p>I am currently going through schooling for Computer Programming at Georgian College with the goal of continuing education into Cybersecurity following that. I am a very creative person always looking for ways to help others or bring smiles to their faces!</p>
+        </header>
+        <main>
+            <div class="projects">
+                <!-- content about some projects I have done - can be coursework or other side projects you have completed as well -->
+                <div class="jennWedding" id="wordsLeft">
+                    <p>Invitation for a wedding, storing the information given by guests in a database</p>
+                    <img src="images/wedding.png" alt="Wedding Invitation" class="weddingImage">
+                </div>
+                <div class="momBirthday" id="wordsRight">
+                    <img src="images/birthday.png" alt="Birthday Invitation" class="birthdayImage">
+                    <p>Created a birthday invitation that stored the guests information in a database</p>
+                </div>
+                <div class="htmlWebsite" id="wordsLeft">
+                    <p>As a final project, I designed a website for a product made before 1993 using the Outpost board game from 1991-1994. Created as a group project with one other creator while in school.</p>
+                    <img src="images/outpost.png" alt="Outpost board game" class="outpostImage">
+                </div>
+                <div class="virtCommWebsite" id="wordsRight">
+                    <img src="images/howTo.png" alt="How To Code C# Basics" class="howToImage">
+                    <p>I designed a how-to website to learn the basics of C# code as another final project in school describing how to code certain aspects of C# to allow people to begin their understanding.</p>
+                </div>
+            </div>
+            <div class="aboutMe">
+                <img src="images/personal.jpg" alt="portrait" class="portrait">
+                <p>I was fortunate enough to start coding in grade 10, as coding became available in high schools, and immediately found a deep love for it. The ability to create whatever you want by typing out the correct sequence of information is something, that before grade 10, I never knew I needed. Entertaining that my mom forced me to sign up for the course and now I'm making a career out of it.</p>
+                <p>When I'm not coding, you'll usually find me reading anything from mystery and action to dark fantasy and romance or with a hook in my hand crocheting some new idea I've got stuck in my head! I love dogs, especially my mini goldendoodle named Ernie, and being able to relax with good company.</p>
+            </div>
+            <div class="skills">
+                <h3>Known Coding Languages:</h3>
+                <div class="languages">
+                    <p>C#</p>
+                    <p>Python</p>
+                    <p>PHP</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Java</p>
+                    <p>Database</p>
+                </div>
+                <p>Typically used in web development or application development</p>
+            </div>
+        </main>
+        <footer>
+            <!-- the contact form - does not need to be functional -->
+            <p>Feel free to reach out if you have any questions about anything mentioned! Whether its work or hobbies, I'm always happy to help if possible.</p>
+            <form class="contactForm">
+                <input class="name" type="text" name="name" placeholder="Name" required>
+                <input class="email" type="email" name="email" placeholder="Email" required>
+                <textarea class="message" name="message" placeholder="Message" required></textarea>
+                <button>Submit</button>
+            </form>
+        </footer>
+    </body>
+</html>

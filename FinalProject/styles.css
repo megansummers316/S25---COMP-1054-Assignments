@@ -1,0 +1,174 @@
+/* colour palette used: https://coolors.co/palette/d9ed92-b5e48c-99d98c-76c893-52b69a-34a0a4-168aad-1a759f-1e6091-184e77 */
+
+/* font */
+.libertinus-sans-regular {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.libertinus-sans-bold {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.libertinus-sans-regular-italic {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* css for everything */
+* {
+    font-size: 10px;
+    /* get a cool font */
+    font-family: "Libertinus Sans", sans-serif;
+}
+img {
+    border: 2px solid #1A759F;
+}
+
+/* header css */
+header {
+    text-align: center;
+    background-color: #B5E48C;
+    padding: 10px;
+}
+header h1 {
+    font-size: 4rem;
+}
+header p {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* main css */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0 20px 0;
+}
+.projects > div {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #76C893;
+    margin: 2.5px;
+    border-radius: 20px;
+    background-color: #D9ED92;
+    height: min-content;
+    max-height: 150px;
+}
+.projects > div > p {
+    max-width: 50%;
+    font-size: 1.3rem;
+}
+#wordsLeft p {
+    text-align: right;
+}
+#wordsRight p {
+    text-align: left;
+}
+.projects > div > img {
+    width: 50%;
+    margin: 5px;
+}
+.weddingImage {
+    /* width: 50%; */
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.birthdayImage {
+    /* width: 400px; */
+    margin: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.aboutMe {
+    background-color: #99D98C;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 2fr;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 5px;
+}
+.aboutMe p {
+    font-size: 1.5rem;
+    margin: 7px;
+    text-align: center;
+}
+.portrait {
+    width: 125px;
+    justify-self: center;
+    align-self: center;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9ED92;
+    border: 3px solid #76C893;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.skills h3 {
+    font-size: 2.5rem;
+}
+.languages {
+    display: flex;
+}
+.languages p {
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 2rem;
+    border: 2px solid #1E6091;
+    margin: 3px;
+    border-radius: 20px;
+}
+.skills p {
+    font-size: 1.8rem;
+}
+
+/* footer css */ 
+footer {
+    display: flex;
+    padding: 10px;
+    background-color: #B5E48C;
+}
+footer p {
+    text-align: right;
+    font-size: 2rem;
+    padding-right: 1.2rem;
+    width: 50%;
+}
+.contactForm {
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    width: 50%;
+}
+.name, .email, .message {
+    margin: 3px;
+    font-size: 1.4rem;
+    border: 2px solid #1E6091;
+}
+form button {
+    font-size: 1.4rem;
+    background-color: #184E77;
+    color: white;
+    width: fit-content;
+    justify-self: center;
+    padding: 2px 10px 2px 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    .projects {
+        margin: 20px 10% 20px 10%;
+    }
+    .projects > div {
+        max-height: 225px;
+    }
+    .projects > div > p {
+        font-size: 2rem;
+    }
+}
